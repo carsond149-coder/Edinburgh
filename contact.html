@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Merriweather:wght@400;700&family=Literata:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    #contact_intro{
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #contact_form_section{
+        padding: 40px 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgb(247, 247, 247);
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    #contact_form_section input{
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #contact_form_section textarea{
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #contact_form_section button{
+        background-color: rgb(46, 125, 50);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #contact_form_section button:hover{
+        background-color: rgb(39, 99, 42);
+    }
+
+    .name-fields{
+        display: flex;
+        gap: 10px;
+    }
+
+    .name-fields input{
+        flex: 1;
+    }
+
+    #contact_form_section .experience{
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #contact_form_section label.radio-label{
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    #contact_form_section input[type="radio"]{
+        width: auto;
+        margin: 0;
+    }
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div id="Navbar">
+            <h1>Edinburgh</h1>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="beyond_edinburgh.html">Beyond Edinburgh</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="where_to_stay.html">Where to Stay</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="history-and_heritage.html">History & Heritage</a>
+                <a href="events.html">Events</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-image">
+            <img src="Images/contact_top.jpg" alt="edinburgh castle">
+            <div class="top-bar">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+
+        <div id="contact_intro">
+            <p>Have a question or need more information? Fill out the form below and we will get back to you as soon as possible.</p>
+        </div>
+
+        <div id="contact_form_section">
+            <form>
+                <div class="name-fields">
+                    <label>
+                        <p>First Name:</p>
+                        <input type="text" name="first_name" required>
+                    </label>
+
+                    <label>
+                        <p>Last Name:</p>
+                        <input type="text" name="last_name" required>
+                    </label>
+                </div><br>
+
+                <label>
+                    <p>Email:</p><br>
+                    <input type="email" name="email" required>
+                </label><br><br>
+
+                <label>
+                    <p>Reason for Contact:</p><br>
+                    <label class="radio-label">
+                        <input type="radio" name="reason" value="question"> Question
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="reason" value="feedback"> Feedback
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="reason" value="other"> Other
+                    </label>
+                </label><br><br>
+
+                <label>
+                    Subscribe to newsletter:
+                    <input type="checkbox" name="subscribe">
+                </label><br><br>
+
+                <label>
+                    <p>Message:</p><br>
+                    <textarea name="message" rows="5" required></textarea>
+                </label><br><br>
+
+                <label>
+                    <p>Your experience with the website:</p>
+                    <input type="text" name="experience" class="experience" placeholder="Briefly share your experience">
+                </label><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edinburgh City | Discover Scotland</p>
+        <img src="Images/Logo_Dragon.png" alt="Dragon Logo" height="auto" width="20px">
+    </footer>
+</body>
+</html>

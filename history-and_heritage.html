@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <title>History & Heritage</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Merriweather:wght@400;700&family=Literata:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        #intro, #audio, #old_town, #new_town, #traditions, #timeline {
+            padding: 25px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /*Titles*/
+        #intro h2, #audio h2, #old_town h2, #new_town h2, #traditions h2, #timeline h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            padding-bottom: 6px;
+            border-bottom: 4px solid #2E7D32;
+            display: inline-block;
+        }
+
+        /*Text*/
+        #intro p, #audio p, #old_town p, #new_town p, #traditions p, #timeline p {
+            margin: 10px;
+            line-height: 1.5;
+        }
+
+        /*Images*/
+        #old_town img, #new_town img, #traditions img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 15px;
+            border-radius: 6px;
+        }
+
+        #audio audio {
+            margin: 15px 0;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /*Timeline*/
+        #timeline dl {
+            margin: 20px;
+        }
+
+        #timeline dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #timeline dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div id="Navbar">
+            <h1>Edinburgh</h1>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="beyond_edinburgh.html">Beyond Edinburgh</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="where_to_stay.html">Where to Stay</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="events.html">Events</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-image">
+            <img src="Images/history.png" alt="history picture">
+            <div class="top-bar">
+                <h2>History & Heritage</h2>
+            </div>
+        </div>
+
+        <div id="intro">
+            <h2>Discover Edinburgh’s Past</h2>
+            <p>Edinburgh’s story stretches from ancient fortresses to Enlightenment thinkers. This page explores the key places, traditions, and historical influences that shaped the city into what it is today.</p>
+        </div>
+
+        <div id="old_town">
+            <h2>Edinburgh’s Old Town</h2>
+            <img src="Images/old_town.jpg" alt="old town" width="300">
+
+            <p>The Old Town is the heart of Edinburgh’s medieval history. Its narrow closes, cobblestone paths, and ancient buildings have stood for centuries. Landmarks like the Royal Mile and Edinburgh Castle tell the story of kings, conflicts, and cultural traditions that shaped Scotland.</p>
+        </div>
+
+        <div id="new_town">
+            <h2>The Georgian New Town</h2>
+            <img src="Images/new_town.avif" alt="new town" width="300">
+
+            <p>Built in the late 1700s, the New Town represents Scotland’s Age of Enlightenment. Its grand squares and elegant stone terraces are considered some of the best urban designs in Europe. The contrast between Old Town and New Town is part of what makes Edinburgh a UNESCO World Heritage Site.</p>
+        </div>
+
+        <div id="audio">
+            <h2>Listen to Scotland’s Heritage</h2>
+            <p>Experience the atmosphere of Scotland’s past through this traditional Scottish tune.</p>
+
+            <audio controls>
+                <source src="Images/Tears_Upon_The_Lock.mp3" type="audio/mp3">
+            </audio>
+
+        </div>
+
+        <div id="traditions">
+            <h2>Traditions & Culture</h2>
+            <img src="Images/tradition_culture.webp" alt="" width="300">
+
+            <p>Scotland’s heritage goes beyond buildings and monuments—it includes music, festivals, storytelling, and identity. Traditions like ceilidh dancing, bagpipe music, tartans, and major annual events like Hogmanay and the Edinburgh Festival continue to shape Scottish culture.</p>
+        </div>
+
+        <div id="timeline">
+            <h2>Timeline Highlights</h2>
+            <dl>
+                <dt>1130s</dt>
+                <dd>Edinburgh grows as a royal burgh and becomes an important medieval stronghold.</dd>
+
+                <dt>1500s</dt>
+                <dd>The Scottish Renaissance shapes culture, learning, and architecture.</dd>
+
+                <dt>1700s</dt>
+                <dd>The Georgian New Town is built during Scotland’s Enlightenment era.</dd>
+
+                <dt>1995</dt>
+                <dd>The Old Town and New Town are officially named a UNESCO World Heritage Site.</dd>
+            </dl>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edinburgh City | Discover Scotland</p>
+        <img src="Images/Logo_Dragon.png" alt="Dragon Logo" height = atuo width=20px>
+    </footer>
+</body>
+</html>

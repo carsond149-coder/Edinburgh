@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <title>Beyond Edinburgh</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Merriweather:wght@400;700&family=Literata:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /*Each Section*/
+        #intro, #stirling, #st_andrews, #highlands, #videos_section, #download{
+            padding: 25px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /*Section Headers*/
+        #intro h2, #stirling h2, #st_andrews h2, #highlands h2, #videos_section h2, #download h2{
+            font-size: 28px;
+            margin-bottom: 15px;
+            padding-bottom: 6px;
+            border-bottom: 4px solid #2E7D32;
+            display: inline-block;
+        }
+
+        /*Writing*/
+        #intro p, #stirling p, #st_andrews p, #highlands p, #videos_section p, #download p {
+            margin: 10px;
+            line-height: 1.5;
+        }
+
+        /*Images*/
+        #stirling img, #st_andrews img, #highlands img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 15px;
+            border-radius: 6px;
+        }
+
+        /*Videos*/
+        #video_1, #video_2, #video_3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 0 0 300px;
+        }
+
+        #video_1 iframe, #video_2 iframe, #video_3 iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        #video_1 p, #video_2 p, #video_3 p {
+            text-align: center;
+            margin-top: 8px;
+        }
+        #videos_section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 25px 20px;
+        }
+
+        .videos_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        /*PDF Download*/
+        #download p{
+            margin-bottom: 30px;
+        }
+
+        #download a{
+            background-color: #2E7D32;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        #download a:hover {
+            background-color: #1B5E20;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div id="Navbar">
+            <h1>Edinburgh</h1>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="where_to_stay.html">Where to Stay</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="history-and_heritage.html">History & Heritage</a>
+                <a href="events.html">Events</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-image">
+            <img src="Images/beyond_edinburgh_pic.jpg" alt="beyond edinburgh">
+            <div class="top-bar">
+                <h2>Beyond Edinburgh</h2>
+            </div>
+        </div>
+
+        <div id="intro">
+            <h2>Explore Nearby</h2>
+            <p>Edinburgh is a great base for short trips and day tours. Below are a few popular places visitors often add to their itineraries. These are close enough for a day trip and offer a variety of history, scenery, and coastal charm.</p>
+        </div>
+
+        <div id="stirling">
+            <h2>Stirling</h2>
+            <img src="Images/stirling_castle.webp" alt="stirling castle" heigh="200px" width="auto">
+            <p>Stirling is famous for its castle and the Wallace Monument. It played a key role in Scotland’s history and offers excellent views and well-preserved historic sites. A typical visit includes the castle tour and a walk up to the monument.</p>
+            <p><b>Distance from Edinburgh:</b> ~1 hour by car / ~1 hour by train</p>
+        </div>
+
+        <div id="st_andrews">
+            <h2>St Andrews</h2>
+            <img src="Images/st_andrews.webp" alt="st andrews coastline" heigh="200px" width="auto">
+            <p>St Andrews is a charming coastal town known for its university, ruined cathedral, and world-famous golf courses. It’s a pleasant mix of history, sea air, and relaxed town life.</p>
+            <p><b>Distance from Edinburgh:</b> ~1 hour 15 minutes by car / ~1.5 hours by bus</p>
+        </div>
+
+        <div id="highlands">
+            <h2>Glencoe & The Highlands</h2>
+            <img src="Images/highlands.jpg" alt="glencoe" heigh="200px" width="auto">
+            <p>The Highlands offer dramatic scenery and rugged landscapes. Glencoe is one of the most photographed spots in Scotland — ideal if you want mountains, lochs, and dramatic drives. Consider this for a longer day trip or overnight stay.</p>
+            <p><b>Distance from Edinburgh:</b> ~2.5 to 3 hours by car (longer by public transport)</p>
+        </div>
+
+        <div id="videos_section">
+            <h2>Explore More of Scotland</h2>
+            <p>Here are a few videos that highlight popular destinations outside of Edinburgh.</p>
+
+            <div class="videos_container">
+                <div id="video_1">
+                    <iframe src="https://www.youtube.com/embed/iLeXx7vBTOQ?si=qiZlo7VdABuOJwxm" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p><i>Take in breathtaking aerial views of Stirling Castle and its historic surroundings.</i></p>
+                </div>
+
+                <div id="video_2">
+                    <iframe src="https://www.youtube.com/embed/FVlK1I3iJ4w?si=B04JqptNX9VaI2Zy" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p><i>Discover the charm of St Andrews Harbour from above, with its scenic coastline and townscape.</i></p>
+                </div>
+
+                <div id="video_3">
+                    <iframe src="https://www.youtube.com/embed/WbPtZ918enQ?si=bfq5ZKVuf9lY5jQp" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p><i>Experience the dramatic landscapes of Glencoe Valley in sweeping drone footage.</i></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="download">
+            <h2>Planning a Longer Trip?</h2>
+            <p>If you want a comprehensive overview of Scotland — routes, tips, and must-see places — download the full guide.</p>
+            <a href="Images/scotland_guide.pdf" target="'_blank">Download: Scotland Travel Guide</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edinburgh City | Discover Scotland</p>
+        <img src="Images/Logo_Dragon.png" alt="Dragon Logo" height = atuo width=20px>
+    </footer>
+</body>
+</html>

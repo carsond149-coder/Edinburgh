@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<head>
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Merriweather:wght@400;700&family=Literata:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /*Table*/
+        #restaurant-table {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        #restaurant-table th, #restaurant-table td {
+            border: 1px solid #2E7D32;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        #restaurant-table th {
+            background-color: #2E7D32;
+            color: white;
+        }
+
+        #restaurant-table td {
+            background-color: #f5f5f5;
+        }
+
+        /* Each Section */
+    #intro, #malt_shovel_inn, #lounge_grill, #locanda_de_gusti, #makars_gourmet_mash, 
+    #rio_brazilian_steakhouse, #tollhouse, #worlds_end, #quinns_cafe {
+        padding: 25px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /*Section Headers*/
+    #intro h2, #malt_shovel_inn h2, #lounge_grill h2, #locanda_de_gusti h2,
+    #makars_gourmet_mash h2, #rio_brazilian_steakhouse h2, #tollhouse h2, 
+    #worlds_end h2, #quinns_cafe h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        padding-bottom: 6px;
+        border-bottom: 4px solid #2E7D32;
+        display: inline-block;
+    }
+
+    /*Paragraphs*/
+    #intro p, #malt_shovel_inn p, #lounge_grill p, #locanda_de_gusti p,
+    #makars_gourmet_mash p, #rio_brazilian_steakhouse p, #tollhouse p,
+    #worlds_end p, #quinns_cafe p {
+        margin: 10px;
+        line-height: 1.5;
+    }
+
+    /* Images */
+    #malt_shovel_inn img, #lounge_grill img, #locanda_de_gusti img,
+    #makars_gourmet_mash img, #rio_brazilian_steakhouse img, #tollhouse img,
+    #worlds_end img, #quinns_cafe img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 15px 0;
+        border-radius: 6px;
+    }
+
+    /* Table */
+    #restaurant-table {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    #restaurant-table th, #restaurant-table td {
+        border: 1px solid #2E7D32;
+        padding: 8px 12px;
+        text-align: left;
+    }
+
+    #restaurant-table th {
+        background-color: #2E7D32;
+        color: white;
+    }
+
+    #restaurant-table td {
+        background-color: #f5f5f5;
+    }
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div id="Navbar">
+            <h1>Edinburgh</h1>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="beyond_edinburgh.html">Beyond Edinburgh</a>
+                <a href="where_to_stay.html">Where to Stay</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="history-and_heritage.html">History & Heritage</a>
+                <a href="events.html">Events</a>
+            </div>
+        </div>
+    </header>
+
+<!--Possible table place. Opening hours, price, rating, etc.-->
+    <main>
+        <div class="top-image">
+            <img src="Images/resstaurant.webp" alt="restaurants picture">
+            <div class="top-bar">
+                <h2>Restaurants</h2>
+            </div>
+        </div>
+
+        <div id="intro">
+            <h2>Restaurant Details</h2>
+            <p>Here is a summary of some popular Edinburgh restaurants including opening hours, price range, and customer rating.</p>
+        </div>
+
+        <table id="restaurant-table">
+            <thead>
+                <tr>
+                    <th>Restaurant</th>
+                    <th>Opening Hours</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Malt Shovel Inn</td>
+                    <td>12:00 PM – 11:00 PM</td>
+                    <td>$12–$30</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>1802 Lounge & Grill</td>
+                    <td>11:30 AM – 10:30 PM</td>
+                    <td>$18–$42</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>Locanda De Gusti</td>
+                    <td>12:00 PM – 10:00 PM</td>
+                    <td>$24–$48</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>Makars Gourmet Mash</td>
+                    <td>12:00 PM – 9:30 PM</td>
+                    <td>$14–$34</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>Rio Brazilian Steakhouse</td>
+                    <td>5:00 PM – 11:00 PM</td>
+                    <td>$30–$60</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>The Tollhouse</td>
+                    <td>12:00 PM – 10:00 PM</td>
+                    <td>$18–$36</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>The World's End</td>
+                    <td>11:00 AM – 11:00 PM</td>
+                    <td>$12–$30</td>
+                    <td>★★★☆☆</td>
+                </tr>
+                <tr>
+                    <td>Quinn's Cafe</td>
+                    <td>8:00 AM – 4:00 PM</td>
+                    <td>$6–$18</td>
+                    <td>★★★★☆</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="malt_shovel_inn">
+            <h2>Malt Shovel Inn</h2>
+            <img src="images/malt_shovel.jpg" alt="malt shovel inn" height="auto" width="200">
+            <p>A traditional Scottish pub known for its warm, welcoming atmosphere and classic comfort food. It is a great place to enjoy hearty dishes and a good selection of ales in the heart of Edinburgh.</p>
+        </div>
+
+        <div id="lounge_grill">
+            <h2>1802 Lounge & Grill</h2>
+            <img src="images/lounge_grill.jpg" alt="1802 Lounge & lounge_grill" height="auto" width="200">
+            <p>It offers modern Scottish and grill-style dishes in a relaxed, stylish setting. It is known for its quality steaks, fresh local ingredients, and comfortable lounge atmosphere perfect for a casual dining experience.</p>
+        </div>
+
+        <div id="locanda_de_gusti">
+            <h2>Locanda De Gusti</h2>
+            <img src="images/locanda_de_gussti.webp" alt="Locanda De Gusti" height="auto" width="200">
+            <p>Locanda is an authentic Neapolitan restaurant known for fresh seafodd, handmade pasta, and traditional Southern Italian dishes. It offers a warm, family-run atmosphere that makes it feel like a true Italian dining experience in the center of Edinburgh.</p>
+        </div>
+
+        <div id="makars_gourmet_mash">
+            <h2>Makars Gourmet Mash Bar</h2>
+            <img src="Images/mash_bar.webp" alt="Makars Gourmet Mash Bar" height="auto" width="200">
+            <p>A popular Scottish spot famous for its creative mashed potato dishes paired with hearty mains. It is a cozy place to enjoy comfort food made from local ingredients.</p>
+        </div>
+
+        <div id="rio_brazilian_steakhouse">
+            <h2>Rio Brazilian Steakhouse</h2>
+            <img src="Images/rio_brazilian_steakhouse.jpg" alt="Rio Brazilian Steakhouse" height="auto" width="200">
+            <p>A lively Brazilian restaurant offereing all you can eat meats carved tableside. Guests can enjoy a wide variety of grilled cuts along with a fresh salad and sides bar.</p>
+        </div>
+
+        <div id="tollhouse">
+            <h2>The Tollhouse</h2>
+            <img src="Images/tollhouse.jpeg" alt="The Tollhouse" height="auto" width="200">
+            <p>A charming riverside restaurant known for its seasonal Scottish dishes and relaxed atmosphere. It combines modern dining with views of the Water of Leith.</p>
+        </div>
+
+        <div id="worlds_end">
+            <h2>The World's End</h2>
+            <img src="images/worlds_end.jpg" alt="The World's End" height="auto" width="200">
+            <p>A historic pub serving classic Scottish meals in a cozy, old-town atmosphere. It sits at the edge of the Royal Mile where Edinburgh's ancient city walls once stood.</p>
+        </div>
+
+        <div id="quinns_cafe">
+            <h2>Quinn's Cafe</h2>
+            <img src="Images/quinns_cafe.jpg" alt="Quinn's Cafe" height="auto" width="200">
+            <p>A friendly local cafe known for hearty breakfasts, homemade lunches, and welcoming service. It is a popular stop for simple affordable Scottish comfort food.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edinburgh City | Discover Scotland</p>
+        <img src="Images/Logo_Dragon.png" alt="Dragon Logo" height = atuo width=20px>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<head>
+    <title>Where To Stay</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Merriweather:wght@400;700&family=Literata:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /*Intro*/
+        #intro {
+            max-width: 900px;
+            margin: 20px auto;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        #intro, #hostels, #bnbs, #hotels {
+            padding: 25px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Linked Images*/
+        #accommodation-nav {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        #accommodation-nav h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 4px solid #2E7D32;
+            display: inline-block;
+        }
+
+        .accommodation-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .accommodation-container div {
+            position: relative;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .accommodation-container img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .accommodation-container img:hover {
+            transform: scale(1.08);
+        }
+
+        .accommodation-container .caption {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(46, 125, 50, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+        }
+html
+Copy code
+
+
+        /*Text at bottom of image*/
+        #accommodation-nav div {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(46, 125, 50, 0.8);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #intro, #hostels, #bnbs, #hotels {
+            padding: 25px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        #hostels h2, #bnbs h2, #hotels h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            padding-bottom: 6px;
+            border-bottom: 4px solid #2E7D32;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #hostels p, #bnbs p, #hotels p {
+            margin: 10px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        #hostels img, #bnbs img, #hotels img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+
+        #hostels button, #bnbs button, #hotels button {
+            display: block;
+            margin: 10px 0 30px 0;
+            padding: 10px 20px;
+            background-color: #2E7D32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #hostels button:hover, #bnbs button:hover, #hotels button:hover {
+            background-color: #1B5E20;
+        }
+
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div id="Navbar">
+            <h1>Edinburgh</h1>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="beyond_edinburgh.html">Beyond Edinburgh</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="history-and_heritage.html">History & Heritage</a>
+                <a href="events.html">Events</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-image">
+            <img src="Images/housing.jpg" alt="hostel">
+            <div class="top-bar">
+                <h2>Where To Stay</h2>
+            </div>
+        </div>
+
+        <div id="accommodation-nav">
+            <h2>Explore Accommodations</h2>
+            <div class="accommodation-container">
+                <div>
+                    <a href="#hostels">
+                        <img src="Images/hostels.jpg" alt="Hostels">
+                    </a>
+                    <div class="caption">Hostels</div>
+                </div>
+                <div>
+                    <a href="#bnbs">
+                        <img src="Images/B&B.jpg" alt="B&Bs">
+                    </a>
+                    <div class="caption">Bed & Breakfasts</div>
+                </div>
+                <div>
+                    <a href="#hotels">
+                        <img src="Images/hotel.jpg" alt="Hotels">
+                    </a>
+                    <div class="caption">Hotels</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="intro">
+            <p>Edinburgh has a wide range of accommodations, from cozy hostels to luxurious hotels and charming B&Bs. Click a category below to explore your options and book your stay.</p>
+        </div>
+
+        <div id="hostels">
+            <h2>Hostels</h2>
+            <img src="Images/castle_rock.jpg" alt="Castle Rock Hostel" height="200px" width="auto">
+            <p>Castle Rock Hostel – Central location near Edinburgh Castle, clean shared rooms, and a friendly atmosphere. Rating: ★★★★☆</p>
+            <a href="https://www.castlerockedinburgh.com/" target="_blank"><button>Book Now</button></a>
+
+            <img src="Images/central_hostel.jpeg" alt="Central Edinburgh Hostel" height="200px" width="auto">
+            <p>Central Edinburgh Hostel – Modern hostel with communal areas and easy access to Old Town attractions. Rating: ★★★★☆</p>
+            <a href="https://www.hostellingscotland.org.uk/hostels/edinburgh-central/" target="_blank"><button>Book Now</button></a>
+        </div>
+
+        <div id="bnbs">
+            <h2>Bed & Breakfasts</h2>
+            <img src="Images/fountainB&B.avif"alt="Fountain Court B&B" height="200px" width="auto">
+            <p>Fountain Court B&B – Cozy rooms in a historic building with homemade Scottish breakfasts. Rating: ★★★★☆</p>
+            <a href="https://fountain-court-apartments-grove.topedinburghhotels.com/en/" target="_blank"><button>Book Now</button></a>
+        </div>
+
+        <div id="hotels">
+            <h2>Hotels</h2>
+            <img src="Images/balmoral_hotel.jpg" alt="The Balmoral Hotel" height="200px" width="auto">
+            <p>The Balmoral Hotel – Luxury hotel with elegant rooms, spa, and Michelin-star dining. Rating: ★★★★★</p>
+            <a href="https://www.roccofortehotels.com/hotels-and-resorts/the-balmoral-hotel/" target="_blank"><button>Book Now</button></a>
+
+            <img src="Images/radisson_blu.jpg" alt="Radisson Blu Edinburgh" height="200px" width="auto">
+            <p>Radisson Blu Edinburgh – Modern hotel with river views and close proximity to Princes Street. Rating: ★★★★☆</p>
+            <a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-edinburgh" target="_blank"><button>Book Now</button></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edinburgh City | Discover Scotland</p>
+        <img src="Images/Logo_Dragon.png" alt="Dragon Logo" height = atuo width=20px>
+    </footer>
+</body>
+</html>
